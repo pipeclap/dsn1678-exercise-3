@@ -90,10 +90,13 @@ body {
   opacity: 0;
   background-color: #000;
   border-radius: 6px;
+    transition:all 400ms linear;
+
 }
 
 .sales__details[data-state="active"]{
   opacity: 1;
+  margin-top: 0;
 }
 
 .sales__details::before {
