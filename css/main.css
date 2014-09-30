@@ -81,15 +81,19 @@ body {
   font-size: 6rem;
 }
 
-.sales__details[data-state="active"]{
+.sales__details{
   left: 0;
   margin: 25px 5% 0;
   padding: 2em;
   position: absolute;
   width: 90%;
-
+  opacity: 0;
   background-color: #000;
   border-radius: 6px;
+}
+
+.sales__details[data-state="active"]{
+  opacity: 1;
 }
 
 .sales__details::before {
