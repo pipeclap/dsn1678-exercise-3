@@ -16,11 +16,11 @@ salesLeft.on('click', salesLeftClickHandler);
 
 
 
-var salesDetailright = $('.salesdetailsright');
+var salesDetailsright = $('.salesdetailsright');
 var salesRight = $('.salesright');
 
 var salesRightClickHandler = function (){
-	var isActive = salesdetailsright.attr('data-state');
+	var isActive = salesDetailsright.attr('data-state');
 
 	if (isActive == 'active') {
 	    salesDetailsright.attr('data-state', 'inactive');
