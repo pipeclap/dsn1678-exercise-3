@@ -1,17 +1,16 @@
-var salesDetails = $('.sales__details');
-var Sales = $('.sales');
+var salesDetailsleft = $('.salesdetailsleft');
+var salesLeft = $('.salesleft');
 
-var salesClickHandler = function (){
-	var isActive = salesDetails.attr('data-state');
+var salesLeftClickHandler = function (){
+	var isActive = salesDetailsleft.attr('data-state');
 
 	if (isActive == 'active') {
-	    salesDetails.attr('data-state', 'inactive');
+	    salesDetailsleft.attr('data-state', 'inactive');
 	} else{
-		salesDetails.attr('data-state', 'active');
+		salesDetailsleft.attr('data-state', 'active');
 	}	
 };
 
 
-Sales.on('click', salesClickHandler);
-
+salesLeft.on('click', salesLeftClickHandler);
 
